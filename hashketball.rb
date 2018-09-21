@@ -77,12 +77,12 @@ end
 
 def big_shoe_rebounds
   bigShoeGuy = ""
-  biggestShoe = 1
+  biggestShoe = "1"
   game_hash.each {|home_away, keys|
     keys[:players].each { |playerInfo|
     puts playerInfo
-      if playerInfo[:shoe] > biggestShoe
-        biggestShoe = playerInfo[:shoe_size]
+      if playerInfo[:shoe] > biggestShoe.to_i
+        biggestShoe = playerInfo[:shoe_size].to_s
         bigShoeGuy = playerInfo[:player_name]
       end
     }
