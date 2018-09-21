@@ -86,7 +86,7 @@ def big_shoe_rebounds
       end
     }
   }
-  return bigShoeGuy
+  return player_stats(bigShoeGuy)[:rebounds]
 end
 
 
