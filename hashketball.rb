@@ -58,10 +58,11 @@ end
 def player_numbers(team)
   numArray = []
  game_hash.each {|home_away, keys| 
-  if keys[:team_name] == team }
+  if keys[:team_name] == team 
     players = keys[:players]
     numArray << players[:number]
   end
+ }
   numArray
 end
 
