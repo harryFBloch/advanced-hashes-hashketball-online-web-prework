@@ -70,7 +70,7 @@ def player_stats(player)
      keys[:players].each {|key, value| 
         if key[:player_name] == player
           
-          return key.map
+          return key.delete()
         end
      }
   }
