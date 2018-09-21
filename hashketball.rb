@@ -56,9 +56,12 @@ def team_names
 end
 
 def player_numbers(team)
-  teamInfo = game_hash.collect {|home_away, keys| 
+  numArray = []
+ game_hash.each {|home_away, keys| 
   if keys[:team_name] == team }
-    puts teamInfo
+    players = keys[:players]
+    numArray << players[:number]
+  end
 end
 
 player_numbers("Brooklyn Nets")
