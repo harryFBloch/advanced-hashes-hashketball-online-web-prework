@@ -80,6 +80,7 @@ def big_shoe_rebounds
   biggestShoe = 1
   game_hash.each {|home_away, keys|
     keys[:players].each { |playerInfo|
+    puts playerInfo
       if playerInfo[:shoe_size] > biggestShoe
         biggestShoe = playerInfo[:shoe_size]
         bigShoeGuy = playerInfo[:player_name]
