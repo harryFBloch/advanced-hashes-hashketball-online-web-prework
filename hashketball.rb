@@ -69,7 +69,7 @@ def player_stats(player)
   puts keys
      keys[:players].each {|key, value| 
         if key[:player_name] == player
-          return key.except(:player_name)
+          return key.map
         end
      }
   }
