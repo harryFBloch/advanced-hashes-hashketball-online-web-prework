@@ -69,8 +69,7 @@ def player_stats(player)
   puts keys
      keys[:players].each {|key, value| 
         if key[:player_name] == player
-          
-          return key.delete()
+          return key.delete(:player_name)
         end
      }
   }
