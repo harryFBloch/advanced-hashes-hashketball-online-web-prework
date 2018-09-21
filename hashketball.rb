@@ -64,7 +64,9 @@ def player_numbers(team)
  }
 end
 
-player_numbers("Brooklyn Nets")
+def player_stats(player)
+  
+end
 
 
 
