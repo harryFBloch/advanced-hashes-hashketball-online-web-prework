@@ -76,7 +76,17 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  
+  bigShoeGuy = ""
+  biggestShoe = 1
+  game_hash.each {|home_away, keys|
+    keys[:players].each { |playerInfo|
+      if playerInfo[:shoe_size] > biggestShoe
+        biggestShoe = playerInfo[:shoe_size]
+        bigShoeGuy = playerInfo[:player_name]
+      end
+    }
+  }
+  return bigShoeGuy
 end
 
 
