@@ -62,6 +62,7 @@ def player_numbers(team)
     players = keys[:players]
     numArray << players[:number]
   end
+  numArray
 end
 
 player_numbers("Brooklyn Nets")
