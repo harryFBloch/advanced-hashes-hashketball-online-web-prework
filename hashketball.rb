@@ -65,7 +65,9 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-  
+  game_hash.each {|home_away, keys|
+     keys[:players].map {|playerInfo| if playerInfo[:player_name] == player}
+  }
 end
 
 
