@@ -66,10 +66,14 @@ end
 
 def player_stats(player)
   game_hash.each {|home_away, keys|
-     return keys[:players].map {|playerInfo| if playerInfo[:player_name] == player}
+     keys[:players].each {|key, value| 
+       puts key
+       puts value
+     }
   }
 end
 
+player_stats("Alan Anderson")
 
 
 
