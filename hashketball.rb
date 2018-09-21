@@ -68,7 +68,7 @@ def player_stats(player)
   game_hash.each {|home_away, keys|
   puts keys
      keys[:players].each {|key, value| 
-       return key if key[:player_name] == player
+       return key.exept(:player_name) if key[:player_name] == player
      }
   }
 end
